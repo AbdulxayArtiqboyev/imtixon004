@@ -1,0 +1,128 @@
+.section__main{
+    width: 100%;
+    height: 684px;
+    background: #012F34;
+    display: flex;
+    align-items: center;
+}
+.about{
+    width: 100%;
+    height: 404px;
+    display: flex;
+    gap: 90px;
+    &__title{
+        width: 40%;
+        height: 220px;
+    }
+    &__text{
+        width: 42%;
+        height: 346px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    &__title p{
+        font-family: Livvic;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 48px;
+            color: white;
+    }
+    &__text__first{
+        width: 100%;
+        height: 94px;
+        display: flex;
+        gap: 23px;
+    }
+    &__text__first__img{
+        width: 20%;
+        height: 100%;
+    }
+    &__text__first__title{
+        width: 75%;
+        height: 100%;
+    }
+    &__text__first__img img{
+        width: 100%;
+        height: 100%;
+    }
+    &__text__first__title p{
+        font-family: Livvic;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        color:#F67E7E;
+    }
+    .first__text{
+        font-family: Livvic;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 25px;
+            margin-top: 10px;
+            color: white;
+    }
+}
+@media(max-width:927px){
+    .about{
+        &__title p{
+            font-size: 40px;
+        }
+        .first__text{
+            font-size: 14px;
+        }
+    }
+}
+@media(max-width:863px){
+    .about{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        &__title{
+            width: 80%;
+            height: 90px;
+        }
+        &__text{
+            width: 80%;
+        }
+        &__text__first__img{
+            width: 15%;
+        }
+        &__text__firts{
+            height: 90px;
+        }
+        &__title p{
+            font-size: 30px;
+            line-height: 30px;
+        }
+    }
+}
+@media(max-width:600px){
+    .section__main{
+        height: 900px;
+    }
+    .about{
+        &__text{
+            height: auto;
+        }
+        &__text{
+            width: 100%;
+        }
+        &__text__first{
+            
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            align-items: center;
+            gap: 16px;
+        }
+        &__text__first__title{
+            text-align: center;
+        }
+        &__title{
+            width: 50%;
+            height: auto;
+            margin-left: 70px;
+        }
+    }
+}
